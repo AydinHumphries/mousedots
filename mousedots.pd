@@ -1,0 +1,8 @@
+#N canvas -8 -8 1366 685 12;
+#X msg 76 224 \; pd-mousedots.pd obj 50 50 bng \, obj 100 50 bng \,
+obj 150 50 bng \, obj 200 50 bng \, obj 250 50 bng \;;
+#X msg 553 225 \; pd-mousedots.pd editmode 1 \, mouse 50 50 0 0 \,
+cut \, mouse 100 50 0 0 \, cut \, mouse 150 50 0 0 \, cut \, mouse
+200 50 0 0 \, cut \, mouse 250 50 0 0 \, cut \, editmode 0 \;;
+#X obj 553 194 loadbang;
+#X connect 2 0 1 0;
